@@ -1,0 +1,29 @@
+/* Video */
+
+body .video-container {
+  width: 100%;
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  &.twitch, &.youtube.show_controls {
+    padding-top: 30px;
+    // Use .show_controls f you want the play/pause controls
+    // to show before the video plays, like on older youtube.
+  }
+  &.youtube, &.vimeo {
+    // Nothing goes here anymore. Both use overlay transports.
+  }
+}
+
+.video-container video, .video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0!important;
+  left: 0!important;
+  width: 100%!important;
+  height: 100%!important;
+}
+
+#meetup_oembed {
+height: auto!important;
+padding: 20px!important;
+}
