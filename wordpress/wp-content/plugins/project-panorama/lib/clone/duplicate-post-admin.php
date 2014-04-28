@@ -130,7 +130,7 @@ if (get_option('duplicate_post_show_submitbox') == 1){
 
 function duplicate_post_add_duplicate_post_button() {
 	if ( isset( $_GET['post'] ) && duplicate_post_is_current_user_allowed_to_copy()) {
-		
+		global $post;
 		if(get_post_type($post->ID) == 'psp_projects') { ?>
 <div id="duplicate-action">
 	<a class="submitduplicate duplication"

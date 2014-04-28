@@ -4,14 +4,14 @@
 // Run button configuration
   "commands": {
         "Node version": "node --version",
-      "Install wordpress":"wget http://wordpress.org/latest.tar.gz && tar -xzvf latest.tar.gz && parts install php5 mysql && parts start apache2 mysql && mysqladmin -u root password 'password' && mysql -u root -p"
+      "Grunt":"cd wordpress/wp-content/themes/Ingenex_Theme && grunt"
   },
 
 // Preview button configuration
   "preview": {
         "Project Index (static)": "https://{{domain}}/{{index}}",
         "Current File (static)": "https://{{domain}}/{{filepath}}",
-        "Box URL": "http://{{domain}}:3000/",
+        "Box URL": "http://{{domain}}:3000/wordpress",
         "Box URL SSL": "https://{{domain}}:9500/"
   }
 }

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<section id="main" role="main" class="nine columns">
+	<section id="main" role="main" class="tweleve columns">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -9,7 +9,5 @@
 		<?php endwhile; ?>
 
 	</section> <!-- /#main -->
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

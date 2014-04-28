@@ -46,7 +46,6 @@
 	?>
 		<p class="nocomments"><?php _e( 'Comments are closed.', '_mbbasetheme' ); ?></p>
 	<?php endif; ?>
-
-	<?php comment_form(); ?>
+<?php idm_custom_comment_form();?>
 
 </div><!-- #comments .comments-area -->

@@ -50,7 +50,7 @@ add_action( 'admin_init', 'edd_project_panorama_plugin_updater' );
 function add_license_link($links) { 
 	
 	$license_key = trim( get_option ('edd_panorama_license_key')); 
-	if(!license_key) { 
+	if(!$license_key) { 
 		
 		$settings_link = '<a href="options-general.php?page=panorama-license">Register License</a>';
 			
@@ -68,7 +68,7 @@ function add_license_link($links) {
 function add_license_after_row() {
 		
 	$license_key = trim( get_option ('edd_panorama_license_key')); 
-	if(!license_key) { 
+	if(!$license_key) { 
 		
 		echo '</tr><tr class="plugin-update-tr"><td colspan="3"><div class="update-message"><a href="options-general.php?page=panorama-license">Activate your license</a> for automatic upgrades. Need a license? <a href="http://www.projectpanorama.com" target="_new">Purchase one.</a></div></td>';
 			

@@ -14,12 +14,6 @@ function idm_register_required_plugins() {
 			'force_activation'	=> true
 		),
 
-		array(
-			'name' 				=> 'Use Google Libraries',
-			'slug' 				=> 'use-google-libraries',
-			'required' 			=> true,
-			'force_activation'	=> true
-		),
 
 		array(
 			'name' 				=> 'Pods - Custom Content Types and Fields',
@@ -34,6 +28,23 @@ function idm_register_required_plugins() {
 			'required' 			=> true,
 			'force_activation'	=> true
 		),
+        array(
+			'name' 				=> 'iThemes Security (formerly Better WP Security)',
+			'slug' 				=> 'better-wp-security',
+			'required' 			=> true,
+			'force_activation'	=> true
+		),
+        
+        array(
+            'name'               => 'Backup Buddy', // The plugin name.
+            'slug'               => 'backupbuddy', // The plugin slug (typically the folder name).
+            'source'             => get_stylesheet_directory() . '/lib/plugins/backupbuddy.zip', // The plugin source.
+            'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+            'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
+            'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+            'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+            'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+        ),
 
 	);
 

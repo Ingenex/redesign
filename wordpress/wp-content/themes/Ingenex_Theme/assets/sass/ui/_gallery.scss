@@ -16,6 +16,7 @@
     opacity:0;
     margin-bottom:-$gutter * 7.5;
 }
+ img.shadow{box-shadow: 1px 1px 15px #000;}
 .gallery-item:hover figcaption,.gallery-item:focus figcaption {
     opacity:1;
 }

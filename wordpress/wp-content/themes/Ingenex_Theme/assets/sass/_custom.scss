@@ -1,0 +1,96 @@
+form button:focus{outline:none}
+.pin-item{
+    @include fancytiles(3,2,1, $min-device-width, '600px', $row-max-width);
+}
+
+.button-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+#hero {
+width: 100%;
+min-height: 183px;
+background: url(http://www.seattlecidercompany.com/wp-content/themes/seattle-cider/img/home/bg.jpg) center center no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+padding:0 0 4rem 0;
+}
+#hero h1 {
+color: #FFF;
+@include font-size(60px);
+}
+#hero .valign {
+min-height: 420px;
+}
+
+.valign {
+display: table;
+width: 100%;
+}
+.valign>div {
+display: table-cell;
+vertical-align: middle;
+}
+
+.center {
+text-align: center;
+}
+
+#hero.shadow{
+    box-shadow: inset 0px 65px 20px -60px #000,inset 0px -65px 20px -60px #000;
+    img{
+        box-shadow: .1rem .1rem 0.4rem #000;
+    }
+    p,li,ul,h1,,h2,h3,h4,h5,h6,blockquote{
+       text-shadow:.1rem .1rem 0.4rem #000;
+    }
+}
+
+.screen-reader-text{
+    position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}
+#menu-top-nav li {
+display: inline-block;
+float: right;
+padding: 0 10px;
+@include font-size(13px);
+    a {color:$navbar-link-color;}
+}
+#hero + .row section{min-height:0px;}
+//slideout nav   
+#menu-main-nav {
+    @include respond(all-phones) {
+        position: fixed;
+        display: block;
+        width: 0!important;
+        top: 0;
+        z-index: -1;
+        right: 0;
+        float:right;
+        min-height: 100%;
+        left: auto;
+        transition: .5s ease-in-out;
+    }
+}
+body.active #menu-main-nav{
+    width:40%!important;
+    z-index:1;
+}
+body.active > *{
+    position: relative;
+    margin-left:-40%;
+}
+body > *{transition:margin-left .5s ease-in-out;}
+.parralax{backface-visibility: hidden;}
+
+#pin-cats a.badge{background-color:$secondary-color!important}
+#pin-cats a.active{background-color:$primary-color!important}

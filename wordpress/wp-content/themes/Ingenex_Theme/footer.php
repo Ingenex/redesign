@@ -7,7 +7,6 @@
 			<p>&copy; <?php echo date( "Y" ); echo " "; bloginfo( 'name' ); ?></p>
 		</footer>
 <?php wp_footer(); ?>
-<?php global $ga_conversion; if ($ga_conversion->get_the_value('code')) $ga_conversion->the_value('code'); ?>
-
+<?php $key = '_idm_code'; $themeta = get_post_meta($post->ID, $key, TRUE); if($themeta != '') {echo $themeta;} ?>
 </body>
 </html>

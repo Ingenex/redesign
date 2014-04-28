@@ -39,7 +39,9 @@ function idm_gallery_shortcode($attr) {
     'columns'    => 3,
     'size'       => 'gallery-thumbnail',
     'include'    => '',
-    'exclude'    => ''
+    'exclude'    => '',
+    'type'       => '',
+    'shadow'     => null
 ), $attr));
 if (isset( $columns ) ){
     if($columns == 1){$column = 'tweleve';}
@@ -90,12 +92,16 @@ if (isset( $columns ) ){
       $selector = "gallery-{$instance}";
 
       $gallery_style = $gallery_div = '';
-
+    
       $gallery_div = "<section id='$selector' class='gallery clearfix'>";
       $output = apply_filters( 'gallery_style', $gallery_style . "\n\t\t" . $gallery_div );
       foreach ( $attachments as $id => $attachment ) {
         $link = isset($attr['link']) && 'file' == $attr['link'] ? wp_get_attachment_link($id, $size , false, false) : wp_get_attachment_link($id, $size, true, false);
         $link = str_replace( '<a href', '<a rel="'. $selector .'" href', $link );
+        if (isset($shadow)){
+            $type = $type.' shadow';
+        }
+        $link = str_replace( 'class="', 'class="image '.$type.' ', $link );
 
         $output .= "
         <{$itemtag} class='gallery-item'>";

@@ -23,7 +23,6 @@
     // Custom Functions
 	//require_once( trailingslashit( IDM_PLUGIN_PATH ) . 'functions/functions.php' );
     // Metaboxes
-    require_once( trailingslashit( IDM_PLUGIN_PATH ) . 'metaboxes/setup.php');
-    require_once( trailingslashit( IDM_PLUGIN_PATH ) . 'metaboxes/conversion-tracking-spec.php');
-
+    require_once( trailingslashit( IDM_PLUGIN_PATH ) . 'Custom-Metaboxes/example-functions.php');
+    require_once( trailingslashit( IDM_PLUGIN_PATH ) . 'Pinboard/pinboard.php');
 ?>

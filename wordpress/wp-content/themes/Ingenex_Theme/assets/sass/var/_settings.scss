@@ -18,7 +18,7 @@ $document-width: $row-max-width;				// Default Document
 $max-device-width: 2880px;						// Max Document Size
 
 // Spacing
-$nav-distance: 0; 							// Navigation distance from the top of the viewport
+$nav-distance: 0px; 							// Navigation distance from the top of the viewport
 
 // Typography
 $font-family: "Open Sans";
@@ -71,29 +71,29 @@ $absurd: ms(10);
 
 // Typography Colors
 $header-font-color: #444444 !default;
-$header-link-color: #d04526 !default;
+$header-link-color: #5e005a !default;
 $header-link-hover-color: #c03d20 !default;
 $body-font-color: #555555 !default;
-$body-link-color: #d04526 !default;
-$body-link-hover-color: #c03d20 !default;
+$body-link-color: #03b20a !default;
+$body-link-hover-color: #43b948 !default;
 
 // User Interface Colors
 $global-bg-color: #fff;
-$navbar-color: #4a4d50;
-$navbar-link-color: #fff;
+$navbar-color: #DFDFDF;
+$navbar-link-color: #444444;
 
-$primary-color: #3085d6;
-$secondary-color: #42a35a;
+$primary-color: #03b20a;
+$secondary-color: #5e005a;
 $default-color: #f2f2f2;
-$info-color: #4a4d50;
+$info-color: #f0f0f0;
 $danger-color: #ca3838;
 $warning-color: #f6b83f;
 $success-color: #58c026;
 
-$primary-hover-color: #58b2fa;
-$secondary-hover-color: #6dbb80;
+$primary-hover-color:#43b948;
+$secondary-hover-color: #802f7d;
 $default-hover-color: #ffffff;
-$info-hover-color: #868d92;
+$info-hover-color: #e9e9e9;
 $danger-hover-color: #f14f4f;
 $warning-hover-color: #fdd27f;
 $success-hover-color: #66d92f;
@@ -133,7 +133,7 @@ $form-select-color: #555;
 $tab-height: 42px;
 
 // Navigation
-$navcontain-height: 100px; // makes space at the top of a document for when using a fixed nav
+$navcontain-height: 90px; // makes space at the top of a document for when using a fixed nav
 
 // Drawers & Modals
 $modal-overlay-color: rgba(0, 0, 0, 0.8);

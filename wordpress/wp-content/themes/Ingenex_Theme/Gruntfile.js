@@ -116,6 +116,6 @@ module.exports = function(grunt) {
     grunt.renameTask('rsync', 'deploy');
 
     // register task
-    grunt.registerTask('default', ['compass', 'uglify', 'imagemin', 'autoprefixer' ,'watch']);
-
+    grunt.registerTask('default', ['compass', 'uglify', 'autoprefixer' ,'watch']);
+    grunt.registerTask('imagemin','imagemin')
 };

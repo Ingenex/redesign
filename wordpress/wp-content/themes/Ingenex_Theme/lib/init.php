@@ -17,6 +17,9 @@ function idm_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', '_idmbasetheme' ),
 	) );
+    register_nav_menus( array(
+		'top_nav' => __( 'Top Nav', '_idmbasetheme' ),
+	) );
 
 	// Register Widget Areas
 	add_action( 'widgets_init', 'idm_widgets_init' );
@@ -98,6 +101,15 @@ function idm_setup() {
     // add slideshare to oembeds
     // Add Slideshare oEmbed
     add_action('init','idm_add_custom_oembeds');
+    
+    // Add shortcodes
+    add_shortcode('button', 'idm_button_shortcode');
+    add_shortcode('hero', 'idm_hero_shortcode');
+    add_shortcode('column', 'idm_column_shortcode');
+    add_shortcode('row', 'idm_row_shortcode');
+    
+    // Remove empty p tags and breaks from nested shortcodes
+    add_filter('the_content', 'idm_fix_shortcodes');
 }
 endif; // mb_setup
 add_action( 'after_setup_theme', 'idm_setup' );
