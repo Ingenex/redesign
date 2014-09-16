@@ -37,18 +37,19 @@ function idm_gallery_shortcode($attr) {
     'icontag'    => '',
     'captiontag' => 'figcaption',
     'columns'    => 3,
-    'size'       => 'gallery-thumbnail',
+    'size'       => 'square-thumbnail',
     'include'    => '',
     'exclude'    => '',
     'type'       => '',
     'shadow'     => null
 ), $attr));
 if (isset( $columns ) ){
-    if($columns == 1){$column = 'tweleve';}
-     if($columns == 2){$column = 'six';}
-     if($columns == 3){$column = 'four';}
-     if($columns == 4){$column = 'three';}
+    if($columns == 1){$column = 'one';}
+     if($columns == 2){$column = 'two';}
+     if($columns == 3){$column = 'three';}
+     if($columns == 4){$column = 'four';}
 }
+    
       $id = intval($id);
       if ( 'RAND' == $order )
         $orderby = 'none';
@@ -93,11 +94,18 @@ if (isset( $columns ) ){
 
       $gallery_style = $gallery_div = '';
     
-      $gallery_div = "<section id='$selector' class='gallery clearfix'>";
+      $gallery_div = "<section id='$selector' class='gallery clearfix $column-column-gallery'>";
+    
       $output = apply_filters( 'gallery_style', $gallery_style . "\n\t\t" . $gallery_div );
+   
+    
+    
       foreach ( $attachments as $id => $attachment ) {
+        $attr['link'] = 'file';
         $link = isset($attr['link']) && 'file' == $attr['link'] ? wp_get_attachment_link($id, $size , false, false) : wp_get_attachment_link($id, $size, true, false);
         $link = str_replace( '<a href', '<a rel="'. $selector .'" href', $link );
+ 
+          
         if (isset($shadow)){
             $type = $type.' shadow';
         }

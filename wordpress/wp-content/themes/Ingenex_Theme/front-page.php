@@ -1,16 +1,44 @@
 <?php get_header(); ?>
+<div class="row">
+     <?php echo do_shortcode('[hero parallax=true background="http://napkin-famble.codio.io:3000/wordpress/wp-content/uploads/2014/09/5058564-Edit-full-750x556.jpg"]<blockquote>
+        Customers come to us because they aren’t growing fast enough. They want more qualified leads.
+        <cite>
+            Derek Mehraban, Ingenex CEO
+        </cite>
+    </blockquote>[/hero]'); ?>
+
+</div>
+    <div class="row">
+        <div class="four columns">
+            <h2>Service 1</h2>
+            <p>
+            </p>
+        </div>
+        <div class="four columns">
+            <h2>Service 2</h2>
+            <p>
+            </p>
+        </div>
+        <div class="four columns">
+            <h2>Service 3</h2>
+            <p>
+            </p>
+        </div>
+    </div>
+
+        <?php get_template_part('templates/partials/content','offset');?> 
+
+
 
 <section id="main" role="main">
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <article class="post tweleve colums" id="post-<?php the_ID(); ?>">
-
-        <h1><?php the_title(); ?></h1>
-
         <div class="entry">
 
             <?php the_content(); ?>
+           
+            <?php echo do_shortcode('[hero parallax=true background="http://napkin-famble.codio.io:3000/wordpress/wp-content/uploads/2014/09/5058564-Edit-full-750x556.jpg"][/hero]'); ?>
             <h2>Buttons</h2>
             <div class="example-grid btnmarg">
                 <div class="row">
@@ -78,8 +106,8 @@
             </div>
             <?php wp_link_pages( array( 'before' => 'Pages: ', 'next_or_number' => 'number' ) ); ?>
 
-
-        </article>
+	<div class="slide">
+        </div>
 
         <?php endwhile; endif; ?>
 

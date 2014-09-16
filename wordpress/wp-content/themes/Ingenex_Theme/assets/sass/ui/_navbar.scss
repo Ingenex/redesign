@@ -16,7 +16,7 @@
 
   &.fixed {
     position: fixed;
-    z-index: 8000;
+    z-index: 99999;
   }
   &.pinned {
     position: absolute;
@@ -29,6 +29,7 @@
       top: 18%;
       right: 4%;
       width: 46px;
+      padding: 16px 0 0 5px;
       position: absolute;
       text-align: center;
       display: inline-block;
@@ -48,12 +49,13 @@
 }
 
 .navbar .logo {
-  display: inline-block;
+  display: table;
   margin: 0 $gutter 0 0;
   padding: 0;
   @include line-and-height(height-calc($larger - 3));
   a {
-    display: block;
+    display: table-cell;
+    vertical-align:middle;
     padding: 0;
     overflow: hidden;
     @include line-and-height(height-calc($larger - 3));

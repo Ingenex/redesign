@@ -25,7 +25,7 @@ function idm_setup() {
 	add_action( 'widgets_init', 'idm_widgets_init' );
 
 	// Execute shortcodes in widgets
-	// add_filter('widget_text', 'do_shortcode');
+	add_filter('widget_text', 'do_shortcode');
 
 	// Add RSS links to head
 	add_theme_support( 'automatic-feed-links' );
@@ -40,14 +40,15 @@ function idm_setup() {
 	define ( 'DISALLOW_FILE_EDIT', true );
 
 	// Set Content Width
-	if ( ! isset( $content_width ) ) $content_width = 900;
+	if ( ! isset( $content_width ) ) $content_width = 600;
 
 	// Enable Post Thumbnails
 	add_theme_support( 'post-thumbnails' );
 
 	// Add Image Sizes
 	// add_image_size( $name, $width = 0, $height = 0, $crop = false );
-    add_image_size( 'gallery-thumbnail', 300, 300, true );
+    add_image_size( 'square-thumbnail', 300, 300, true );
+     add_image_size( 'long-thumbnail', 620, 300, true );
 	// Enable Custom Headers
 	// add_theme_support( 'custom-header' );
 
@@ -58,7 +59,7 @@ function idm_setup() {
 	add_action( 'wp_dashboard_setup', 'idm_remove_dashboard_widgets' );
 
 	// Change Admin Menu Order
-	add_filter( 'custom_menu_order', 'idm_custom_menu_order' );
+	add_filter( 'idm_custom_menu_order', 'idm_custom_menu_order' );
 	add_filter( 'menu_order', 'idm_custom_menu_order' );
 
 	// Hide Admin Areas that are not used
@@ -98,8 +99,8 @@ function idm_setup() {
     //add video container to embeds
     add_filter( 'embed_oembed_html', 'idm_embed_html', 10, 3 );
     add_filter( 'video_embed_html', 'idm_embed_html' ); // Jetpack
-    // add slideshare to oembeds
-    // Add Slideshare oEmbed
+   
+    // Add Custom oEmbed
     add_action('init','idm_add_custom_oembeds');
     
     // Add shortcodes

@@ -1,5 +1,36 @@
+
+
+.navbar.fixed{
+box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.3);
+box-shadow: 0 3px 3px -2px #999;
+}
+
+
+.navbar .logo a img{
+width:204px;
+    transition: all .5s ease;
+}
+.navbar.fixed .logo a img {
+    transition: all .5s ease;
+max-height: none;
+width: 170px;
+    display:table-cell;
+}
+
+
+#wpadminbar{display:none!important}
+
+html.js {
+margin-top: 0px !important;
+}
+
+
 form button:focus{outline:none}
+.slide{min-height:600px;background:gray}
 .pin-item{
+    @include fancytiles(3,2,1, $min-device-width, '600px', $row-max-width);
+}
+.clients{
     @include fancytiles(3,2,1, $min-device-width, '600px', $row-max-width);
 }
 
@@ -10,7 +41,7 @@ form button:focus{outline:none}
     text-align: center;
 }
 
-#hero {
+/* #hero {
 width: 100%;
 min-height: 183px;
 background: url(http://www.seattlecidercompany.com/wp-content/themes/seattle-cider/img/home/bg.jpg) center center no-repeat;
@@ -19,7 +50,7 @@ background: url(http://www.seattlecidercompany.com/wp-content/themes/seattle-cid
 -o-background-size: cover;
 background-size: cover;
 padding:0 0 4rem 0;
-}
+} */
 #hero h1 {
 color: #FFF;
 @include font-size(60px);
@@ -94,3 +125,50 @@ body > *{transition:margin-left .5s ease-in-out;}
 
 #pin-cats a.badge{background-color:$secondary-color!important}
 #pin-cats a.active{background-color:$primary-color!important}
+
+.members{}
+
+.members .tab-nav>li>a {
+    padding:0;
+    border:0;
+    height:100%;
+}
+
+.members .tab-nav>li {
+width: 25%;
+margin:0;
+}
+.member img{
+    padding: 0;
+margin: 0;
+outline: none;
+border: none;
+vertical-align: top;
+}
+.members .tab-nav{font-size:0px}
+
+
+.page-template-templatesabout-template-php .rev_slider{
+-webkit-box-shadow: inset -31px -185px 187px -145px rgba(0,0,0,0.75);
+-moz-box-shadow: inset -31px -185px 187px -145px rgba(0,0,0,0.75);
+    box-shadow: inset -31px -185px 187px -145px rgba(0,0,0,0.75);}
+
+.page-template-templatesabout-template-php,.page-template-templatesclient-template-php{margin:-20px 0 0 0}
+
+a.post-edit-link {
+position: absolute;
+left: 20px;
+top: 10px;
+border: 1px solid #919191;
+border-radius: 5px;
+background: #E0E0E0;
+font-size: 1.5em;
+padding: 5px;
+color: #333;
+}
+ul.horizontal-list li{display:inline-block}
+.member-info{position:relative;padding:0 0 20px 0}
+.social-links{position:absolute;bottom:0;right:0}
+
+.relative{position:relative};
+

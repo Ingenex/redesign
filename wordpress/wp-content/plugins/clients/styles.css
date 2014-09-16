@@ -1,0 +1,19 @@
+/*
+Styles for Client Pages
+*/
+
+.single-client .meta a {
+font-size: 1rem;
+font-weight: 800;
+text-transform: uppercase;
+vertical-align: baseline;
+line-height: 1;
+}
+
+.single-client .meta i {
+font-size: 1.4rem;
+line-height: 1.2;
+margin: 0 5px 0 10px;
+}
+
+h1{font-size:300px}

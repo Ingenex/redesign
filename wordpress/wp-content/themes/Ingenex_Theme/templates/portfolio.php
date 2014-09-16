@@ -5,7 +5,7 @@ Template Name: Portfolio Page
 ?>
 
 <?php get_header(); ?>
-
+<div class="row">
 	<section id="main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -17,5 +17,5 @@ Template Name: Portfolio Page
 	</section> <!-- /#main -->
 
 <?php get_sidebar(); ?>
-
+</div><!-- /#row -->
 <?php get_footer(); ?>

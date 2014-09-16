@@ -1,0 +1,76 @@
+#pinboard-wrapper *,#pinboard-wrapper *:before,*:after{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-o-box-sizing: border-box;box-sizing:border-box;margin:0;padding:0}
+#pinboard-wrapper {width:100%}
+#pinboard-wrapper img{width:100%}
+#pinboard-wrapper ul.filter { font-size: 12px;list-style: none; color: #999; height: 30px; line-height: 30px; }
+#pinboard-wrapper ul.filter li { float: left;margin-left: 10px; }
+#pinboard-wrapper li.sort { margin-right: 10px}
+#pinboard-wrapper ul.filter a { display: block; background: #eee; color: #666; height: 31px; line-height: 25px; padding: 0 10px; border: 1px solid #CCC;}
+#pinboard-wrapper ul.filter a {border-color: #CCC;border-style: solid;border-width: 1px;padding: 9px 13px;text-decoration: none;margin-left: -1px;font-family: "minion-pro",sans-serif;font-style: normal;font-weight: 700;line-height: 15px;}
+#pinboard-wrapper ul.filter li:last-child a { margin: 0px }
+#pinboard-wrapper ul.filter a:hover,#pinboard-wrapper ul.filter a.active { background: #FFFFFF;}
+
+#pinboard-wrapper .pin-board{margin-left:-2%}
+#pinboard-wrapper .pin-item {width: 23%;margin-left: 2%;margin-bottom: 20px;position: relative;}
+#pinboard-wrapper .pin-item {display: inline-block;	background: #FEFEFE; border: 1px solid #000000;padding: 1.625%;padding-bottom: 5px;background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);background: -moz-linear-gradient(45deg, #FFF, #F9F9F9);background: -o-linear-gradient(45deg, #FFF, #F9F9F9);background: linear-gradient(45deg, #FFF, #F9F9F9);opacity: 1;}
+#pinboard-wrapper .pin-item img {margin-bottom: 15px;}
+
+#pinboard-wrapper .pin-item p {font: 12px/18px Arial, sans-serif;color: #333;margin: 0;}
+
+#pinboard-wrapper article a {color:#000;text-decoration: none;font-family: "ff-tisa-sans-web-pro",sans-serif;}
+#pinboard-wrapper article a hr{margin:10px 0 0 0}
+#pinboard-wrapper article a h4 {line-height: 1.625em;padding: 0 0 1em 0;}
+#pinboard-wrapper article a .read-more{text-align: center;padding: 5px 0 0 0;}
+
+#pinboard-wrapper #filter-links ~ div .pin-board{margin-top:2%}
+
+#pinboard-wrapper .sticky{width:48%; background: rgb(255,195,0); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,195,0,1) 0%, rgba(255,255,66,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,195,0,1)), color-stop(100%,rgba(255,255,66,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,195,0,1) 0%,rgba(255,255,66,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,195,0,1) 0%,rgba(255,255,66,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,195,0,1) 0%,rgba(255,255,66,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,195,0,1) 0%,rgba(255,255,66,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc300', endColorstr='#ffff42',GradientType=0 ); /* IE6-9 */
+-webkit-box-shadow: 4px 4px 120px 0px rgba(97,97,97,1);
+-moz-box-shadow: 4px 4px 120px 0px rgba(97,97,97,1);
+box-shadow: 4px 4px 120px 0px rgba(97,97,97,1);}
+
+@media only screen and (max-width: 959px) and (min-width: 768px){
+	#pinboard-wrapper .pin-item{width: 23%;}
+	#pinboard-wrapper .sticky{width: 48%;}
+}
+@media only screen and (max-width: 767px){
+	#pinboard-wrapper .pin-item{width: 31%;}
+	#pinboard-wrapper .sticky {width: 64%!important;}
+	#pinboard-wrapper #filter-links{border:0;padding:0;overflow: auto;}
+	#pinboard-wrapper ul.filter{height: inherit}
+	#pinboard-wrapper #filter-links li {display: inline-block;padding: inherit;height: 40px;}
+	#pinboard-wrapper #filter-links li a{display: block}
+}
+@media only screen and (max-width: 479px){
+	#pinboard-wrapper .pin-item{width: 98%;}
+	#pinboard-wrapper .sticky {width: 98%!important;}
+}
+
+h4.read-more {
+font-size: 1em;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+.pin-item {
+display: inline-block;
+float: left;
+padding-left: 1.06383%;
+padding-right: 1.06383%;
+width: 100%;
+border: 1px solid #494949;
+padding: 10px;
+margin: 10px;
+}
+.pin-item hr {
+border-top: 1px dotted #494949;
+clear: both;
+margin: 0 0 5px 0;
+height: 0;
+}

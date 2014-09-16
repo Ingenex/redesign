@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+<div class="row">
+    
 
 	<section id="main" role="main" class="tweleve columns">
 
@@ -9,5 +11,5 @@
 		<?php endwhile; ?>
 
 	</section> <!-- /#main -->
-
+</div><!-- /#row -->
 <?php get_footer(); ?>

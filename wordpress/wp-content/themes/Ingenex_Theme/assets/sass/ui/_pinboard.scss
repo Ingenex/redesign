@@ -1,0 +1,44 @@
+/*
+    Document   : wordpress/wp-content/themes/Ingenex_Theme/assets/sass/ui/_pinboard.scss
+    Created on : 2014-04-24 05:09 PM
+    Author     : ingenex
+    Description: styles related to the pinboard shortcode
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+.pin-container article{
+    margin-bottom:20px;
+}
+.pin-item-container {
+    border: 1px solid #494949;
+    padding: 0 10px 10px;
+}
+.pin-item:nth-child(odd) h4.title{
+    color:$primary-color;
+}
+.pin-item img{margin-top:10px;}
+.pin-item h4.title {
+    color:$secondary-color;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 0;
+    border-bottom: 1px dashed #494949;
+    margin-bottom: 5px;
+}
+.pin-item h4.read-more {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.pin-item hr {
+    border:0;
+    border-top: 1px dashed #494949;
+    clear: both;
+    margin: 0 0 5px 0;
+    height: 0;
+}
+.pin-item p {
+    color:#494949;
+}

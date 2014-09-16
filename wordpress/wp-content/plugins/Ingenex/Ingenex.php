@@ -19,6 +19,7 @@
 
 	if ( !defined( 'IDM_PLUGIN_PATH' ) )    define( 'IDM_PLUGIN_PATH',	plugin_dir_path( __FILE__ ));
 	if ( !defined( 'IDM_PLUGIN_URL' ) )     define( 'IDM_PLUGIN_URL',	plugin_dir_url( __FILE__ ));
+    if ( !defined( 'IDM_TEXT_DOMAIN' ) )    define( 'IDM_TEXT_DOMAIN',	'idm_text_domain');
 
     // Custom Functions
 	//require_once( trailingslashit( IDM_PLUGIN_PATH ) . 'functions/functions.php' );

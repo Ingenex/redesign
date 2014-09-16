@@ -27,10 +27,12 @@ html, body {
 
 .hide {
   display: none;
+  opacity: 0;
 }
 
 .hide.active, .show {
   display: block;
+  opacity:1;
 }
 
 // include all entypo icon classes
@@ -38,7 +40,7 @@ html, body {
 
 // .fixed elements will be static at supplied breakpoint
 // set arg to false for permanent .fixed elements
-@include fixed(portrait-tablets);
+@include fixed(false);
 
 .text-center { @extend %text-center; }
 .text-left { @extend %text-left; }

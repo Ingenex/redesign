@@ -176,7 +176,7 @@ Frontend
  */
 function idm_scripts() {
 	// CSS first
-	wp_enqueue_style( 'idm_style', get_stylesheet_directory_uri().'/assets/css/gumby.css', null, '1.0', 'all' );
+	wp_enqueue_style( 'idm_style', get_stylesheet_directory_uri().'/assets/css/gumby.css', null , '1.0', 'all' );
 	// JavaScript
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -261,7 +261,7 @@ if( !function_exists('idm_embed_html') ) {
             // check if it's a supported video embed
             if( strpos( $url, $host ) !== false ){
             $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );//remove all height and weight references
-            return '<div class="video-container">' . $html . '</div>';
+            return '<div class="video">' . $html . '</div>';
             }
         }
         return $html;
@@ -333,26 +333,31 @@ if( !function_exists('idm_hero_shortcode') ) {
        extract(shortcode_atts(array(
            'background'    => '',
            'parallax' => 'false',
-           'speed' => '0.5',
+           'speed' => '.5',
            'shadow' => '',
            'height' => ''
        ), $atts));
-        $height = $height != ''? 'height:'.$height.';':'';
+        $height = $height != ''? 'style="height:'.$height.'";':'';
         $class = $shadow != '' ? 'shadow' : '';
         $class .= $parallax != 'false' ? ' parallax' : '';
         $gumbyspeed = $parallax != 'false' ? 'gumby-parallax="'.$speed.'"' : '';
-        $background = $background != '' ? 'background-image:url('.$background.');' : '';
+        $background_url = $background;
+        $background = $background != '' ? 'background-image:url('.$background_url.');' : '';
         $content_size = 'tweleve';
         if(is_page_template('templates/right-sidebar.php') ){$content_size = 'nine';}
         if(is_page_template('templates/left-sidebar.php') ){$content_size = 'nine push_three';}
 
-             return '</div></section></div><div id="hero" class="'.$class.'" '.$gumbyspeed.' style="'.$background.' '.$height.'">
-      <div class="valign row" style="'.$height.'"><div class="centered">'.do_shortcode($content).'</div></div>
+             return '</div></section></div><div id="hero" class="'.$class.'" '.$gumbyspeed.' >
+             <div id="hero-bg" style="background-image:url('.$background_url.')"></div><div class="valign row" '.$height.'><div class="hero-content centered">'.do_shortcode($content).'</div>
+      </div>
     </div><div class="row"><section role="main" class="'.$content_size.' columns"><div class="entry">';
     }
 }
 /**
  * Columns Shortcode
+ * 
+ * 
+ * 
  */
 if( !function_exists('idm_column_shortcode') ) {
     function idm_column_shortcode($atts, $content = null){
@@ -418,5 +423,11 @@ if( !function_exists('idm_fix_shortcodes') ) {
         return $content;
     }
 }
+
+
+function new_excerpt_length($length) {
+    return 45;
+}
+add_filter('excerpt_length', 'new_excerpt_length');
 
 
