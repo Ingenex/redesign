@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="row">
-     <?php echo do_shortcode('[hero parallax=true background="http://napkin-famble.codio.io:3000/wordpress/wp-content/uploads/2014/09/5058564-Edit-full-750x556.jpg"]<blockquote>
+     <?php echo do_shortcode('[hero parallax=true background="'.get_stylesheet_directory_uri().'/assets/images/hero/hero1.png"]<blockquote>
         Customers come to us because they aren’t growing fast enough. They want more qualified leads.
         <cite>
             Derek Mehraban, Ingenex CEO
@@ -38,7 +38,7 @@
 
             <?php the_content(); ?>
            
-            <?php echo do_shortcode('[hero parallax=true background="http://napkin-famble.codio.io:3000/wordpress/wp-content/uploads/2014/09/5058564-Edit-full-750x556.jpg"][/hero]'); ?>
+            <?php echo do_shortcode('[hero parallax=true background="http://napkin-famble.codio.io:3000/wordpress/wp-content/themes/Ingenex_Theme/assets/images/hero/hero2.png"][/hero]'); ?>
             <h2>Buttons</h2>
             <div class="example-grid btnmarg">
                 <div class="row">

@@ -18,7 +18,7 @@
                  <div class="tab-content">
                      <div class="row member-info">
                          <div class="four columns">
-							<img src="http://placehold.it/450x750">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/headshot_big_derek.png">
                          </div>
                          <div class="eight columns">
                              <h3>Derek Mehraban</h3>
@@ -41,7 +41,7 @@
                 <div class="tab-content active">
                     <div class="row member-info">
                          <div class="four columns">
-							<img src="http://placehold.it/450x750">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/headshot_big_john.png">
                          </div>
                          <div class="eight columns">
                              <h3>John Wright</h3>
@@ -63,7 +63,7 @@
                 <div class="tab-content">
                     <div class="row member-info">
                          <div class="four columns">
-							<img src="http://placehold.it/450x750">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/headshot_big_ben.png">
                          </div>
                          <div class="eight columns">
                              <h3>Ben Jessup</h3>
@@ -85,7 +85,7 @@
                  <div class="tab-content">
                      <div class="row member-info">
                          <div class="four columns">
-							<img src="http://placehold.it/450x750">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/headshot_big_jessi.png">
                          </div>
                          <div class="eight columns">
                              <h3>Jessie Levine</h3>
@@ -107,7 +107,7 @@
                 <div class="tab-content">
                      <div class="row member-info">
                          <div class="four columns">
-							<img src="http://placehold.it/450x750">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/headshot_big_courtney.png">
                          </div>
                          <div class="eight columns">
                              <h3>Courtney Morrow</h3>
@@ -129,7 +129,7 @@
                 <div class="tab-content">
                      <div class="row member-info">
                          <div class="four columns">
-							<img src="http://placehold.it/450x750">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/headshot_big_andrea.png">
                          </div>
                          <div class="eight columns">
                              <h3>Andrea Kelley</h3>
@@ -151,7 +151,7 @@
      <div class="tab-content">
                      <div class="row member-info">
                          <div class="four columns">
-							<img src="http://placehold.it/450x750">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/headshot_big_jordan.png">
                          </div>
                          <div class="eight columns">
                              <h3>Jordan Eckstein</h3>
@@ -173,7 +173,7 @@
      <div class="tab-content">
                      <div class="row member-info">
                          <div class="four columns">
-							<img src="http://placehold.it/450x750">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/headshot_big_allison.png">
                          </div>
                          <div class="eight columns">
                              <h3>Allison Loehr</h3>

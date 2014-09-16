@@ -200,7 +200,7 @@ width: 100%;
     transition: all ease-in-out .5s;
     
 }
-.member:hover a img{
+.member:hover a img, .member.hover a img{
      -webkit-filter:grayscale(50%);
 }
 
