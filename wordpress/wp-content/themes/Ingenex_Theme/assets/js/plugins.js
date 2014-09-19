@@ -118,14 +118,14 @@ jQuery( document ).ready(function( $ ) {
 	};
 
 	// set background y axis position with 50% x axis
-	Parallax.prototype.setPosition = function(yPos) {
+    Parallax.prototype.setPosition = function(yPos) {
         this.$el.children('div:first-child').css('-webkit-transform', 'matrix(1, 0, 0, 1, 0, '+ yPos +')');
-           this.$el.children('div:first-child').css('-moz-transform', 'matrix(1, 0, 0, 1, 0, '+ yPos +')');
-           this.$el.children('div:first-child').css('-ms-transform', 'matrix(1, 0, 0, 1, 0, '+ yPos +')');
-           this.$el.children('div:first-child').css('-o-transform', 'matrix(1, 0, 0, 1, 0, '+ yPos +')');
-           this.$el.children('div:first-child').css('transform', 'matrix(1, 0, 0, 1, 0,  '+ yPos +')');
-		
-	};
+        this.$el.children('div:first-child').css('-moz-transform', 'matrix(1, 0, 0, 1, 0, '+ yPos +')');
+        this.$el.children('div:first-child').css('-ms-transform', 'matrix(1, 0, 0, 1, 0, '+ yPos +')');
+        this.$el.children('div:first-child').css('-o-transform', 'matrix(1, 0, 0, 1, 0, '+ yPos +')');
+        this.$el.children('div:first-child').css('transform', 'matrix(1, 0, 0, 1, 0,  '+ yPos +')');
+
+    };
 
 	// add initialisation
 	Gumby.addInitalisation('parallax', function() {

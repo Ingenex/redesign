@@ -4,7 +4,8 @@
 // Run button configuration
   "commands": {
         "Node version": "node --version",
-      "Grunt":"cd wordpress/wp-content/themes/Ingenex_Theme && grunt"
+      "Grunt":"cd wordpress/wp-content/themes/Ingenex_Theme && grunt",
+      "CSS":"cd wordpress/wp-content/themes/Ingenex_Theme && grunt compass"
   },
 
 // Preview button configuration
@@ -12,6 +13,7 @@
         "Project Index (static)": "https://{{domain}}/{{index}}",
         "Current File (static)": "https://{{domain}}/{{filepath}}",
         "Box URL": "http://{{domain}}:3000/wordpress",
+      "phpmyadmin": "http://{{domain}}:3000/phpmyadmin",
         "Box URL SSL": "https://{{domain}}:9500/"
   }
 }
