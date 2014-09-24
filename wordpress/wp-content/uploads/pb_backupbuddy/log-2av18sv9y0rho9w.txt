@@ -1,0 +1,5 @@
+[Sep 23, 2014 17:14:09 0-error] [z9dq03fasw] Error #3382: Backup FAILED. Unable to successfully generate ZIP archive.
+[Sep 23, 2014 17:14:09 0-error] [z9dq03fasw] Error #3382 help: http://ithemes.com/codex/page/BackupBuddy:_Error_Codes#3382
+[Sep 23, 2014 17:14:09 0-error] [z9dq03fasw] Failed function `backup_zip_files`. Backup terminated.
+[Sep 23, 2014 17:14:09 0-error] [z9dq03fasw] Sending email error notification with subject `BackupBuddy Error - http://napkin-famble.codio.io:3000/wordpress` to recipient(s): `john@ingenexdigital.com`.
+[Sep 23, 2014 17:14:09 0-error] [z9dq03fasw] Error #45443554: Unable to send error email with WordPress wp_mail(). Verify WordPress & Server settings.

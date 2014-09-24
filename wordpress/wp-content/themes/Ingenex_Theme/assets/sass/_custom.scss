@@ -1,21 +1,17 @@
 
-
-.navbar.fixed{
-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.3);
-box-shadow: 0 3px 3px -2px #999;
+footer:before{
+    content:'';
+    width:100%;
+    display:block;
+    height:5px;
+    overflow:auto;
+	@include ingenex_grad();
 }
 
 
-.navbar .logo a img{
-width:204px;
-    transition: all .5s ease;
-}
-.navbar.fixed .logo a img {
-    transition: all .5s ease;
-max-height: none;
-width: 170px;
-    display:table-cell;
-}
+
+
+
 
 
 #wpadminbar{display:none!important}
@@ -41,16 +37,6 @@ form button:focus{outline:none}
     text-align: center;
 }
 
-/* #hero {
-width: 100%;
-min-height: 183px;
-background: url(http://www.seattlecidercompany.com/wp-content/themes/seattle-cider/img/home/bg.jpg) center center no-repeat;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-padding:0 0 4rem 0;
-} */
 #hero h1 {
 color: #FFF;
 @include font-size(60px);
@@ -112,16 +98,6 @@ padding: 0 10px;
         transition: .5s ease-in-out;
     }
 }
-body.active #menu-main-nav{
-    width:40%!important;
-    z-index:1;
-}
-body.active > *{
-    position: relative;
-    margin-left:-40%;
-}
-body > *{transition:margin-left .5s ease-in-out;}
-.parralax{backface-visibility: hidden;}
 
 #pin-cats a.badge{background-color:$secondary-color!important}
 #pin-cats a.active{background-color:$primary-color!important}
@@ -156,9 +132,9 @@ vertical-align: top;
 .page-template-templatesabout-template-php,.page-template-templatesclient-template-php{margin:-20px 0 0 0}
 
 a.post-edit-link {
-position: absolute;
+position: fixed;
 left: 20px;
-top: 10px;
+bottom: 10px;
 border: 1px solid #919191;
 border-radius: 5px;
 background: #E0E0E0;
@@ -166,8 +142,279 @@ font-size: 1.5em;
 padding: 5px;
 color: #333;
 }
+
 ul.horizontal-list li{display:inline-block}
 .member-info{position:relative;padding:0 0 20px 0}
 .social-links{position:absolute;bottom:0;right:0}
 
 .relative{position:relative}
+
+.blog-offset .row .columns{margin-bottom:20px!important}
+
+.relative {
+    position:relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display:table;
+    width:100%;
+    z-index:2;
+}
+
+.middlecenter {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    height: 300px;
+    top: 0;
+    bottom: 0;
+} 
+
+.relative:hover .hide{display:block!important;-webkit-transition: opacity 1s ease-out!important;opacity: 1!important;}
+
+.relative:hover .excerpt  p {
+    -webkit-transition: all .5s ease-out;
+    background: rgba(138, 138, 138, 0.95);
+}
+
+.relative:hover .middlecenter {
+    z-index: -1;
+    display:none;
+} 
+
+
+.excerpt {
+    height: 100%;
+    width: 100%;
+    display:table-cell;
+    z-index:3;
+    position:relative;
+}
+
+.excerpt p {
+    font-size: .95em;
+    margin:0;
+    padding:0 20px;
+    color: #FFF;
+    display: table-cell;
+    vertical-align:middle;
+    height:300px;
+}
+
+.hide{display: none;opacity: 0;}
+
+.slide{height:600px;}
+
+.relative img {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.date {
+    padding: 0 20px;
+    font-size: 1.8em;
+    color: #FFF;
+    font-weight: 800;
+}
+
+
+.relative .btn{    position:absolute;
+    bottom:5px;
+    right:5px;
+    z-index:4;
+}
+
+.relative .btn span {
+    color: #FFF;
+}
+.table-wrapper{display:table;width:100%}
+.bg {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:1;
+    background-position:fixed;
+    background-origin:fixed;
+}
+
+.downarrow {
+    text-align: center;
+    font-size: 60px;
+    position: relative;
+    top: -40px;
+    z-index: 20;
+    margin-bottom: -21px;
+}
+
+.downarrow a,.downarrow a:hover{
+    color:#fff;
+    color:rgba(255,255,255,.25);
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #6e6d6d;
+    position: absolute;
+    display: block;
+    content: '';
+}
+#nav-toggle span:before {
+    top: -10px;
+}
+#nav-toggle span:after {
+    bottom: -10px; 
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+    background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+}
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+
+
+h1.title {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    color: #FFF;
+    font-size: 1.78em;
+    text-align: center;
+}
+
+.post-info{
+    padding:20px;
+    margin:20px;
+    background:rgba(90, 8, 105, 0.5);
+    border:5px solid #fff;
+}
+.post-info .date{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    color: #FFF;
+    font-size: 1em;
+    text-align: center;}
+
+
+
+#hero {
+    position: relative;
+    overflow: hidden;
+    min-height:500px;
+}
+
+#hero .valign {
+    z-index: 11;
+    position: relative;
+    height: 100%;
+}
+
+
+#hero-bg {
+    position: absolute;
+    top: -100%;
+    right: 0;
+    bottom: -100%;
+    left: 0;
+    background-attachment:fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    -webkit-transform: translateZ(0);
+}
+
+
+.member a img{
+    transition: all ease-in-out .5s;
+
+}
+.member:hover a img, .member.hover a img{
+    -webkit-filter:grayscale(50%);
+}
+
+.active.member a img {
+    -webkit-filter:grayscale(100%);
+
+}
+
+/* CREATING FULL WIDTH BOXES */
+.full-width .third{width:33.33333333%}
+.full-width .box{float:left;padding:20px;}
+.full-width .third:last-of-type, .full-width .third.last{float:right;padding-right:0}
+.full-width .third:first-of-type, .full-width .third.first{padding-left:0;}
+
+.box div{background:rgba(255,255,255,.65);text-align:center;padding:10px;min-height:320px}
+.box h2{
+    background:rgba(80, 9, 77, 0.65);
+    border:4px solid #FFFFFF;
+    font-weight:800;
+    color:#FFFFFF;
+    margin:10px 20px;
+    text-transform:uppercase;
+    font-size: 30px;
+    font-size: 1.8em;
+}
+.box p{text-align:left;padding:10px 20px;color:#000;}
+
+
+a.cta{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: #FFF;
+    border: 5px solid #FFF;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    min-width: 280px;
+}
+
+#intro{padding:50px 20px}
+
+#intro blockquote {
+    color: #000;
+    margin: 0 0 18px;
+    font-size: 3.3em;
+    line-height: 1.2;
+    text-align: center;
+    padding: 100px 0;
+    border:none;
+    font-weight: 600;
+    font-style: italic
+}
+#intro blockquote cite{text-align:right}
+
+img.hero-overlay {
+    position: relative;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+#cta{background:#5d1c5a;padding:30px 10%;}
+#cta h3{
+    color: #FFF;
+    margin: 0 0 18px;
+    font-size: 3.3em;
+    line-height: 1.2;
+    padding: 30px 0;
+    border:none;
+    font-weight: 600;
+    text-transform:uppercase;
+}
+#cta a.cta{float:right}

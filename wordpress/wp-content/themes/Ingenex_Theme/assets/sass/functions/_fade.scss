@@ -18,3 +18,13 @@ $fade-duration: .6s;
   @include transition-duration($fade-duration);
 
 }
+
+@mixin ingenex_grad(){
+    
+    // needs latest Compass, add '@import "compass"' to your scss
+background-color: #5d1c5a; // Old browsers
+@include filter-gradient(#5d1c5a, #24b24b, horizontal); // IE6-8
+// IE9 SVG, needs conditional override of 'filter' to 'none'
+$experimental-support-for-svg: true;
+@include background-image(linear-gradient(left,  #5d1c5a 0%,#5d1c5a 50%,#24b24b 50%,#24b24b 100%));
+}

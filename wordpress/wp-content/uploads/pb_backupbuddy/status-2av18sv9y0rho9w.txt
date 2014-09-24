@@ -1,0 +1,5 @@
+{"event":"error","time":1411492449,"u":"71","run":"57.65","mem":"51.20","data":"Error #3382: Backup FAILED. Unable to successfully generate ZIP archive."}
+{"event":"error","time":1411492449,"u":"71","run":"57.65","mem":"51.20","data":"Error #3382 help: http:\/\/ithemes.com\/codex\/page\/BackupBuddy:_Error_Codes#3382"}
+{"event":"error","time":1411492449,"u":"71","run":"57.65","mem":"51.20","data":"Failed function `backup_zip_files`. Backup terminated."}
+{"event":"error","time":1411492449,"u":"72","run":"57.65","mem":"51.20","data":"Sending email error notification with subject `BackupBuddy Error - http:\/\/napkin-famble.codio.io:3000\/wordpress` to recipient(s): `john@ingenexdigital.com`."}
+{"event":"error","time":1411492449,"u":"80","run":"57.73","mem":"51.20","data":"Error #45443554: Unable to send error email with WordPress wp_mail(). Verify WordPress & Server settings."}
