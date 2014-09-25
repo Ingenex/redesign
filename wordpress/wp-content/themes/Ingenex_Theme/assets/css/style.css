@@ -11,3 +11,25 @@ body > .body-wrapper{transition:margin-left .5s ease-in-out;width:100%;position:
 .navbar.fixed{margin-left:0;transition:margin-left .5s ease-in-out;}
 body.active .navbar.fixed{margin-left:1%;}
 
+
+.section-title{
+    margin:0 0 0 7%;
+    font-weight:600;
+    text-transform:uppercase;
+    color:#000;
+    font-size: 59px;
+    font-size:3.7rem;
+}
+
+section .section-title {
+margin-top: -30px;
+position: relative;
+padding: 0 0 30px 0;
+}
+
+.blog-offset .row {
+max-width: 85%;
+padding:0;
+}
+
+.blog-offset .row .columns{margin-bottom:20px!important}

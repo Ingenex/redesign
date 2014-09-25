@@ -2,7 +2,7 @@
 
 <section id="intro" role="quote">
         <blockquote>
-            Customers come to us because they aren’t<br> growing fast enough. They want more qualified leads.
+            "Customers come to us because they aren’t growing fast enough. They want more qualified leads."
             <cite>
                 Derek Mehraban, Ingenex CEO
             </cite>
@@ -47,9 +47,9 @@
 </section>
 
  
-<section id="cta" role="persuation" class="clearfix">
-    <h3>90% of potential customers will find you when they are ready to buy. Our job is to make you findable, and get you more prospects</h3>
-    <a class="cta" herf="#" >Learn how we do it</a>
+<section id="cta" role="persuation" class="cta-section clearfix">
+    <h3>90% of potential customers will find you when they are ready to buy. Our job is to make you findable, and get you more prospects.</h3>
+    <a class="cta right" href="#" >Learn how we do it</a>
 </section>
 <img class="hero-overlay" src="http://napkin-famble.codio.io:3000/wordpress/wp-content/themes/Ingenex_Theme/assets/images/hero/hero_overlay3.png" alt="Ingenex Services section seperator">
 
@@ -68,6 +68,25 @@
         <li></li>
     </ul>
 </section>
+
+<section id="cta-2" class="cta-section" role="complementary ">
+   
+    <div id="hero" class=" parallax" gumby-parallax=".5">
+        <div id="hero-bg" style="background-image: url(http://napkin-famble.codio.io:3000/wordpress/wp-content/themes/Ingenex_Theme/assets/images/hero/hero4.png);"></div>
+          <img class="hero-overlay" src="http://napkin-famble.codio.io:3000/wordpress/wp-content/themes/Ingenex_Theme/assets/images/hero/hero_overlay1.png" alt="Ingenex Services section seperator">
+        <div class="valign full-width">
+            <div class="hero-content centered">
+                <div class="clearfix">
+                    
+                    <h3>ACCURATE MEASUREMENT AND TRACKING ALLOWS YOU TO PERFECT YOUR SALES FUNNEL AND INCREASE CONVERSIONS</h3>
+                    <a class="cta left" href="#" >￼LEARN THE 5 METRICS THAT WILL TRANSFORM YOUR SALE SUCCESS</a>
+                </div>
+            </div>
+        </div>
+        <img class="hero-overlay" src="http://napkin-famble.codio.io:3000/wordpress/wp-content/themes/Ingenex_Theme/assets/images/hero/hero_overlay.png" alt="Ingenex Services section seperator">
+    </div>
+</section>
+
 
 
 <section id="blog" role="blog preview">

@@ -149,8 +149,6 @@ ul.horizontal-list li{display:inline-block}
 
 .relative{position:relative}
 
-.blog-offset .row .columns{margin-bottom:20px!important}
-
 .relative {
     position:relative;
     overflow: hidden;
@@ -169,6 +167,7 @@ ul.horizontal-list li{display:inline-block}
     height: 300px;
     top: 0;
     bottom: 0;
+    padding: 0 20px;
 } 
 
 .relative:hover .hide{display:block!important;-webkit-transition: opacity 1s ease-out!important;opacity: 1!important;}
@@ -292,17 +291,19 @@ ul.horizontal-list li{display:inline-block}
 
 h1.title {
     font-family: 'Fira Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     color: #FFF;
     font-size: 1.78em;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .post-info{
     padding:20px;
-    margin:20px;
+    margin:20px auto;
     background:rgba(90, 8, 105, 0.5);
     border:5px solid #fff;
+    max-width:400px;
 }
 .post-info .date{
     font-family: 'Fira Sans', sans-serif;
@@ -333,7 +334,7 @@ h1.title {
     bottom: -100%;
     left: 0;
     background-attachment:fixed;
-    background-position: 50% 50%;
+    background-position: 50% 0;
     background-size: cover;
     width: 100%;
     -webkit-transform: translateZ(0);
@@ -392,13 +393,15 @@ a.cta{
     margin: 0 0 18px;
     font-size: 3.3em;
     line-height: 1.2;
-    text-align: center;
-    padding: 100px 0;
+    text-align: left;
+    padding: 100px 7.5%;
     border:none;
     font-weight: 600;
-    font-style: italic
+    font-style: italic;
+    quotes: "\201C""\201D""\2018""\2019";
 }
-#intro blockquote cite{text-align:right}
+
+#intro blockquote cite{text-align:right;}
 
 img.hero-overlay {
     position: relative;
@@ -406,15 +409,30 @@ img.hero-overlay {
     vertical-align: bottom;
 }
 
-#cta{background:#5d1c5a;padding:30px 10%;}
-#cta h3{
+#cta{background:#5d1c5a;}
+.cta-section h3{
     color: #FFF;
-    margin: 0 0 18px;
+    margin: 50px 0 0 0;
     font-size: 3.3em;
     line-height: 1.2;
-    padding: 30px 0;
+    padding:30px 8%;
     border:none;
     font-weight: 600;
     text-transform:uppercase;
+    
 }
-#cta a.cta{float:right}
+.cta-section a.cta.right{float:right;margin-right:15%}
+.cta-section a.cta.left{float:left;margin-left:8%}
+a.cta{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: #FFF;
+    border: 5px solid #FFF;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    min-width: 280px;
+    max-width:400px;
+    background: rgba(80, 9, 77, 0.65);
+}

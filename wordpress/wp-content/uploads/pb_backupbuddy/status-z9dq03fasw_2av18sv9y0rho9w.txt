@@ -84,3 +84,61 @@
 {"event":"haltScript","time":1411492449,"u":"72","run":"57.65","mem":"51.20","data":""}
 {"event":"error","time":1411492449,"u":"72","run":"57.65","mem":"51.20","data":"Sending email error notification with subject `BackupBuddy Error - http:\/\/napkin-famble.codio.io:3000\/wordpress` to recipient(s): `john@ingenexdigital.com`."}
 {"event":"error","time":1411492449,"u":"80","run":"57.73","mem":"51.20","data":"Error #45443554: Unable to send error email with WordPress wp_mail(). Verify WordPress & Server settings."}
+{"event":"details","time":1411564139,"u":"78","run":"3.10","mem":"19.73","data":"--- New PHP process."}
+{"event":"details","time":1411564139,"u":"87","run":"3.20","mem":"19.73","data":"Attempted to set PHP execution time to 7200"}
+{"event":"details","time":1411564139,"u":"91","run":"3.24","mem":"19.73","data":"Reported PHP execution time - Configured: 30; Original: 300; Current: 7200"}
+{"event":"details","time":1411564139,"u":"91","run":"3.24","mem":"19.73","data":"Attempted to set PHP memory limit to user defined WP_MAX_MEMORY_LIMIT (256M) or over-ridden value"}
+{"event":"details","time":1411564139,"u":"91","run":"3.24","mem":"19.73","data":"Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 256M"}
+{"event":"message","time":1411564139,"u":"91","run":"3.24","mem":"19.73","data":"Processing cron step for serial `z9dq03fasw`..."}
+{"event":"details","time":1411564140,"u":"35","run":"3.68","mem":"21.25","data":"Exec test (zip) trying executable path: `\/usr\/local\/bin`."}
+{"event":"details","time":1411564140,"u":"49","run":"3.82","mem":"21.26","data":"Exec test (zip) FAILED: Test zip file not found."}
+{"event":"details","time":1411564140,"u":"49","run":"3.82","mem":"21.26","data":"Exec test (zip) FAILED: exec Exit Code: 127"}
+{"event":"details","time":1411564140,"u":"49","run":"3.82","mem":"21.26","data":"Exec test (zip) trying executable path: ``."}
+{"event":"details","time":1411564140,"u":"60","run":"3.93","mem":"21.26","data":"Exec test (zip) FAILED: Test zip file not found."}
+{"event":"details","time":1411564140,"u":"60","run":"3.93","mem":"21.26","data":"Exec test (zip) FAILED: exec Exit Code: 127"}
+{"event":"details","time":1411564140,"u":"60","run":"3.93","mem":"21.26","data":"Exec test (zip) trying executable path: `\/usr\/bin`."}
+{"event":"details","time":1411564140,"u":"68","run":"4.01","mem":"21.26","data":"Exec test (zip) FAILED: Test zip file not found."}
+{"event":"details","time":1411564140,"u":"68","run":"4.01","mem":"21.26","data":"Exec test (zip) FAILED: exec Exit Code: 127"}
+{"event":"details","time":1411564140,"u":"68","run":"4.01","mem":"21.26","data":"Exec test (zip) trying executable path: `\/usr\/local\/sbin`."}
+{"event":"details","time":1411564140,"u":"75","run":"4.08","mem":"21.26","data":"Exec test (zip) FAILED: Test zip file not found."}
+{"event":"details","time":1411564140,"u":"75","run":"4.08","mem":"21.26","data":"Exec test (zip) FAILED: exec Exit Code: 127"}
+{"event":"details","time":1411564140,"u":"75","run":"4.08","mem":"21.26","data":"Exec test (zip) trying executable path: `\/usr\/sbin`."}
+{"event":"details","time":1411564140,"u":"82","run":"4.14","mem":"21.26","data":"Exec test (zip) FAILED: Test zip file not found."}
+{"event":"details","time":1411564140,"u":"82","run":"4.14","mem":"21.26","data":"Exec test (zip) FAILED: exec Exit Code: 127"}
+{"event":"details","time":1411564140,"u":"82","run":"4.14","mem":"21.26","data":"Exec test (zip) trying executable path: `\/sbin`."}
+{"event":"details","time":1411564140,"u":"88","run":"4.21","mem":"21.26","data":"Exec test (zip) FAILED: Test zip file not found."}
+{"event":"details","time":1411564140,"u":"88","run":"4.21","mem":"21.26","data":"Exec test (zip) FAILED: exec Exit Code: 127"}
+{"event":"details","time":1411564140,"u":"88","run":"4.21","mem":"21.26","data":"Exec test (zip) trying executable path: `\/bin`."}
+{"event":"details","time":1411564140,"u":"95","run":"4.28","mem":"21.26","data":"Exec test (zip) FAILED: Test zip file not found."}
+{"event":"details","time":1411564140,"u":"95","run":"4.28","mem":"21.26","data":"Exec test (zip) FAILED: exec Exit Code: 127"}
+{"event":"details","time":1411564140,"u":"95","run":"4.28","mem":"21.26","data":"Exec test (zip) FAILED: Unable to find zip executable on any specified path."}
+{"event":"details","time":1411564140,"u":"95","run":"4.28","mem":"21.26","data":"Exec test (unzip) checking test file readable: \/home\/codio\/workspace\/wordpress\/wp-content\/plugins\/backupbuddy\/lib\/zipbuddy\/zbzip.php"}
+{"event":"details","time":1411564140,"u":"95","run":"4.28","mem":"21.26","data":"Exec test (unzip) checking test file intact: 0a0f9b28c5ff89dfb4f2a0472be0ea8f"}
+{"event":"details","time":1411564140,"u":"95","run":"4.28","mem":"21.26","data":"Exec test (unzip) trying executable path: `\/usr\/local\/bin`."}
+{"event":"details","time":1411564141,"u":"01","run":"4.34","mem":"21.26","data":"Exec test (unzip) FAILED: Test unzip file test failed."}
+{"event":"details","time":1411564141,"u":"01","run":"4.34","mem":"21.26","data":"Exec test (unzip) FAILED: exec Exit Code: 127"}
+{"event":"details","time":1411564141,"u":"01","run":"4.34","mem":"21.26","data":"Exec test (unzip) trying executable path: ``."}
+{"event":"details","time":1411564141,"u":"17","run":"4.49","mem":"21.26","data":"Exec test (unzip) PASSED."}
+{"event":"details","time":1411564141,"u":"17","run":"4.50","mem":"21.26","data":"Checking unzip version..."}
+{"event":"details","time":1411564141,"u":"25","run":"4.57","mem":"21.27","data":"Found unzip version: 6.0"}
+{"event":"details","time":1411564141,"u":"25","run":"4.57","mem":"21.27","data":"PCLZip class not found. Attempting to load from `\/home\/codio\/workspace\/wordpress\/wp-admin\/includes\/class-pclzip.php`."}
+{"event":"details","time":1411564141,"u":"28","run":"4.61","mem":"22.51","data":"PclZip test PASSED."}
+{"event":"details","time":1411564141,"u":"31","run":"4.63","mem":"22.51","data":"Running process_backup() for serial `z9dq03fasw`."}
+{"event":"details","time":1411564141,"u":"31","run":"4.63","mem":"22.51","data":"About to load fileoptions data."}
+{"event":"details","time":1411564141,"u":"31","run":"4.64","mem":"22.51","data":"Fileoptions data loaded."}
+{"event":"finishAction","time":1411564141,"u":"32","run":"4.64","mem":"22.51","data":"cronPass"}
+{"event":"warning","time":1411564141,"u":"32","run":"4.64","mem":"22.51","data":"Warning #54555. Unable to read fileoptions file `\/home\/codio\/workspace\/wordpress\/wp-content\/uploads\/pb_backupbuddy\/fileoptions\/z9dq03fasw.txt` as it is currently locked."}
+{"event":"warning","time":1411564141,"u":"32","run":"4.64","mem":"22.51","data":"Unable to update out of order step attempt count due to file lock. It may be being written to by the other step at this moment."}
+{"event":"warning","time":1411564141,"u":"32","run":"4.64","mem":"22.51","data":"A scheduled step attempted to run before the previous step completed. Waiting `60` seconds before continuing for it to catch up. Attempt number `1`."}
+{"event":"details","time":1411564141,"u":"32","run":"4.64","mem":"22.51","data":"Scheduling Cron for `z9dq03fasw`."}
+{"event":"details","time":1411564141,"u":"32","run":"4.65","mem":"22.51","data":"Loading DB kicker in case database has gone away."}
+{"event":"details","time":1411564141,"u":"32","run":"4.65","mem":"22.51","data":"Database kicker database object class: `wpdb`."}
+{"event":"details","time":1411564141,"u":"32","run":"4.65","mem":"22.51","data":"Database is being accessed by mysqli."}
+{"event":"details","time":1411564141,"u":"32","run":"4.65","mem":"22.51","data":"Pinging mysqli."}
+{"event":"details","time":1411564141,"u":"32","run":"4.65","mem":"22.51","data":"Database Server connection status verified."}
+{"event":"details","time":1411564141,"u":"32","run":"4.65","mem":"22.51","data":"Database seems to still be connected."}
+{"event":"details","time":1411564141,"u":"32","run":"4.65","mem":"22.51","data":"Scheduling next step to run at `1411564201` (localized time: Sep 24, 2014 1:10:01 pm) with cron tag `pb_backupbuddy_process_backup` and serial arguments `z9dq03fasw`."}
+{"event":"details","time":1411564141,"u":"34","run":"4.66","mem":"22.51","data":"Next step scheduled."}
+{"event":"startAction","time":1411564141,"u":"34","run":"4.66","mem":"22.51","data":"cronPass"}
+{"event":"cronParams","time":1411564141,"u":"34","run":"4.66","mem":"22.51","data":"eyJ0aW1lIjoxNDExNTY0MjAxLCJ0YWciOiJwYl9iYWNrdXBidWRkeV9wcm9jZXNzX2JhY2t1cCIsImFyZ3MiOlsiejlkcTAzZmFzdyJdfQ=="}
+{"event":"details","time":1411564141,"u":"34","run":"4.67","mem":"22.51","data":"About to run next step. If the backup does not proceed within 15 seconds then something is interfering with the WordPress CRON system such as: server loopback issues, caching plugins, or scheduling plugins. Try disabling other plugins to see if it resolves issue.  Check the Server Information page cron section to see if the next BackupBuddy step is scheduled to run. Enable \"Classic\" backup mode on the \"Settings\" page to rule out non-cron issues."}
