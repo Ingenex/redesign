@@ -33,3 +33,10 @@ padding:0;
 }
 
 .blog-offset .row .columns{margin-bottom:20px!important}
+
+
+#clients{padding:40px 0}
+
+@media only screen and (max-width: 767px){
+.forcefullwidth_wrapper_tp_banner{display:none}
+}

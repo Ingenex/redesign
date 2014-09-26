@@ -1,0 +1,56 @@
+/* Form Styles */
+
+@import "../functions/forms";
+
+.hbspt-form{
+    .field {
+        position: relative;
+        max-width: 100%;
+        margin-bottom: 10px;
+        vertical-align: middle;
+        // Font-size 16px for weird form style error
+        font-size: 16px;
+        overflow: hidden;
+        &.metro, .metro {
+            @include border-radius(0);
+        }
+        input, input[type="*"], textarea {
+            max-width: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            border: none;
+            outline: none;
+            resize: none;
+            -webkit-appearance: none;
+            font-family: $font-family;
+            font-weight: $font-weight-light;
+            @include font-size($norm);
+            @include box-shadow(none);
+        }
+        .input {
+
+            border: none;
+            border-radius:none;
+            height:auto;
+            padding:0;
+        }
+        .hs-input {
+            position: relative;
+            padding: 0 10px;
+            background: #fff;
+            border: 1px solid darken($default-color, 10%);
+            @include line-and-height(height-calc($norm));
+            @include font-size($norm);
+            @include border-radius(4px);
+            &.search {
+                @include line-and-height(height-calc($norm));
+                @include shape(oval);
+                padding-right: 0;
+            }
+        }
+        textarea.hs-input {
+            height: auto;
+        }
+    }   
+}

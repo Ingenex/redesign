@@ -18,7 +18,7 @@
 <![endif]-->
     <?php putRevSlider('homepage',"homepage") ?>
    
-    <header class="navbar" gumby-fixed="top" id="nav">
+    <header class="navbar" <?php if(is_front_page()){ echo'gumby-fixed="top"';} ?> id="nav">
         <div class="row">
             <!-- Toggle for mobile navigation, targeting the <ul> -->
             <a class="toggle" gumby-trigger="body" id="nav-toggle" href="#"><span></span></a>

@@ -56,23 +56,61 @@
 
 <section id="clients" role="client list">
     <h2 class="section-title">Our Clients</h2>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+        <div class="row">
+            <div class="two columns">
+                <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/aiag.png" alt="aiag">
+            </div>
+
+            <div class="two columns">
+                <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/aaum.png" alt="University of Michigan Alumni Association">
+            </div>
+
+            <div class="two columns">
+                <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/cranbrook-is.png" alt="cranbrook-is">
+            </div>
+
+            <div class="two columns">
+                <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/guardian.png" alt="guardian">
+            </div>
+
+            <div class="two columns">
+                <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/piedmont.png" alt="piedmont">
+            </div>
+
+            <div class="two columns">
+                <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/campuscommandos.png" alt="Campus Commandos">
+            </div>
+    </div>
+    <div class="row">
+            <div class="two columns">
+                <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/inforum.png" alt="inforum">
+            </div>
+            <div class="two columns">
+                <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/webers.png" alt="webers">
+            </div>
+
+            <div class="two columns">
+                <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/thinkstretch.png" alt="thinkstretch">
+            </div>
+
+            <div class="two columns">
+                <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/plante-moran.png" alt="plante-moran">
+            </div>
+
+            <div class="two columns">
+                <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/osram.png" alt="osram">
+            </div>
+
+            <div class="two columns">
+                <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/cranbrook.png" alt="cranbrook">
+            </div>
+    </div>
 </section>
 
 <section id="cta-2" class="cta-section" role="complementary ">
    
     <div id="hero" class=" parallax" gumby-parallax=".5">
-        <div id="hero-bg" style="background-image: url(http://napkin-famble.codio.io:3000/wordpress/wp-content/themes/Ingenex_Theme/assets/images/hero/hero4.png);"></div>
+        <div id="hero-bg" style="background-image: url(http://napkin-famble.codio.io:3000/wordpress/wp-content/uploads/2014/09/test_slider3.jpg);"></div>
           <img class="hero-overlay" src="http://napkin-famble.codio.io:3000/wordpress/wp-content/themes/Ingenex_Theme/assets/images/hero/hero_overlay1.png" alt="Ingenex Services section seperator">
         <div class="valign full-width">
             <div class="hero-content centered">
