@@ -1,17 +1,35 @@
 
-footer:after{
+.main-footer:before{
     content:'';
     width:100%;
     display:block;
-    height:5px;
+    height:3px;
     overflow:auto;
 	@include ingenex_grad();
 }
 
 
+.main-footer{margin:20px 0 0 0;}
 
 
+.navbar:after{
+    content:'';
+    width:100%;
+    display:block;
+    height:3px;
+    overflow:auto;
+	@include ingenex_grad();
+}
 
+.blog article:after{
+    content:'';
+    width:100%;
+    display:block;
+    height:3px;
+    overflow:auto;
+    margin-top:20px;
+    @include ingenex_grad();
+}
 
 
 #wpadminbar{display:none!important}
@@ -129,12 +147,11 @@ vertical-align: top;
 -moz-box-shadow: inset -31px -185px 187px -145px rgba(0,0,0,0.75);
     box-shadow: inset -31px -185px 187px -145px rgba(0,0,0,0.75);}
 
-.page-template-templatesabout-template-php,.page-template-templatesclient-template-php{margin:-20px 0 0 0}
 
 a.post-edit-link {
 position: fixed;
 left: 20px;
-bottom: 10px;
+bottom: 50px;
 border: 1px solid #919191;
 border-radius: 5px;
 background: #E0E0E0;
@@ -406,7 +423,7 @@ a.cta{
 img.hero-overlay {
     position: relative;
     width: 100%;
-    vertical-align: bottom;
+    vertical-align: top;
 }
 
 #cta{background:#5d1c5a;}

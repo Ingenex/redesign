@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="row">
     
-	<section id="main" role="main" class="nine columns">
+	<section id="main" role="main" class="eight columns">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 

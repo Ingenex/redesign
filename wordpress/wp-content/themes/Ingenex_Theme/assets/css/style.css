@@ -39,4 +39,34 @@ padding:0;
 
 @media only screen and (max-width: 767px){
 .forcefullwidth_wrapper_tp_banner{display:none}
+    
 }
+
+.footer-nav ul{float:right}
+.footer-nav ul li {
+float: left;
+margin: 0 15px;
+font-size:.8rem;
+}
+.blog-roll{padding-top:105px}
+.mt20{margin-top:20px}
+
+.category a {
+background:rgba(90, 8, 105, 100);
+padding: 0 20px;
+border-radius: 20px;
+color: #FFF;
+}
+
+.tags a{
+    background:gray;
+    padding:0 10px;
+    border-radius:10px;
+    color:#fff;
+    font-size:.8rem;
+}
+
+.member-info h3{
+    font-weight:800;
+}
+.member-info .title{display:block;font-size:.5em;color:#60045c}

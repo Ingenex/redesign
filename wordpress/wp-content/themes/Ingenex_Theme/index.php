@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-<div class="row">
-	<section id="main" role="main" class="nine columns">
+<div class="row blog-roll">
+	<section id="main" role="main" class="eight columns">
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

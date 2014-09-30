@@ -5,7 +5,7 @@
 get_header(); ?>
 <div class="row">
 
-	<section id="main" role="main" class="nine columns push_three">
+	<section id="main" role="main" class="eight columns push_four">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 

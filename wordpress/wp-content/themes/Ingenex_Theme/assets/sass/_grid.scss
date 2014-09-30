@@ -31,6 +31,9 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
+    &.full-width{
+        max-width:100%;
+    }
 }
 
 /* To fix the grid into a different size, set max-width to your desired width */

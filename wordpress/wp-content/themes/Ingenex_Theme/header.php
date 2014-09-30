@@ -10,6 +10,8 @@
     
     <?php wp_head(); ?>
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/style.css">
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-542aa73f7662ef37" async></script>
 </head>
 <body <?php body_class(); ?>>
 <div class="body-wrapper">
@@ -18,7 +20,8 @@
 <![endif]-->
     <?php putRevSlider('homepage',"homepage") ?>
    
-    <header class="navbar" <?php if(is_front_page()){ echo'gumby-fixed="top"';} ?> id="nav">
+    
+    <header class="navbar<?php if(is_home()){ echo' fixed';} ?>" <?php if(is_front_page()){ echo'gumby-fixed="top"';} ?> id="nav">
         <div class="row">
             <!-- Toggle for mobile navigation, targeting the <ul> -->
             <a class="toggle" gumby-trigger="body" id="nav-toggle" href="#"><span></span></a>

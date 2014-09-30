@@ -87,8 +87,8 @@ function idm_setup() {
     add_action( 'admin_enqueue_scripts', 'idm_add_quicktags' );
 
 	// Remove Query Strings From Static Resources
-	add_filter( 'script_loader_src', 'idm_remove_script_version', 15, 1 );
-	add_filter( 'style_loader_src', 'idm_remove_script_version', 15, 1 );
+	// add_filter( 'script_loader_src', 'idm_remove_script_version', 15, 1 );
+	// add_filter( 'style_loader_src', 'idm_remove_script_version', 15, 1 );
 
 	// Remove Read More Jump
 	add_filter( 'the_content_more_link', 'idm_remove_more_jump_link' );

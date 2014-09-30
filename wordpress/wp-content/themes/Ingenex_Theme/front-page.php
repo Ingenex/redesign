@@ -56,7 +56,7 @@
 
 <section id="clients" role="client list">
     <h2 class="section-title">Our Clients</h2>
-        <div class="row">
+        <div class="row full-width">
             <div class="two columns">
                 <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/aiag.png" alt="aiag">
             </div>
@@ -81,7 +81,7 @@
                 <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/campuscommandos.png" alt="Campus Commandos">
             </div>
     </div>
-    <div class="row">
+    <div class="row full-width">
             <div class="two columns">
                 <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/inforum.png" alt="inforum">
             </div>
@@ -217,4 +217,14 @@
 </section> <!-- /#main -->
  
 </div> <!-- /row -->
+<div class="row">
+
+        <div class="six columns">
+            <?php dynamic_sidebar( 'Footer-1' ); ?>
+        </div>
+        <div class="six columns">
+            <?php dynamic_sidebar( 'Footer-2' ); ?>
+
+        </div> 
+    </div>
 <?php get_footer(); ?>
