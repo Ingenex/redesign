@@ -56,7 +56,7 @@
 
 <section id="clients" role="client list">
     <h2 class="section-title">Our Clients</h2>
-        <div class="row full-width">
+        <div class="row full-width center">
             <div class="two columns">
                 <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/aiag.png" alt="aiag">
             </div>
@@ -81,7 +81,7 @@
                 <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/campuscommandos.png" alt="Campus Commandos">
             </div>
     </div>
-    <div class="row full-width">
+    <div class="row full-width center">
             <div class="two columns">
                 <img src="http://ingenexdigital.com/wp-content/themes/Ingenex_theme/images/clients/inforum.png" alt="inforum">
             </div>

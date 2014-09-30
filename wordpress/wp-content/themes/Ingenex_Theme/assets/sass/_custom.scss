@@ -334,7 +334,7 @@ h1.title {
 #hero {
     position: relative;
     overflow: hidden;
-    min-height:500px;
+    min-height:100%;
 }
 
 #hero .valign {
@@ -355,6 +355,7 @@ h1.title {
     background-size: cover;
     width: 100%;
     -webkit-transform: translateZ(0);
+    min-height:100%;
 }
 
 
@@ -376,6 +377,7 @@ h1.title {
 .full-width .box{float:left;padding:20px;}
 .full-width .third:last-of-type, .full-width .third.last{float:right;padding-right:0}
 .full-width .third:first-of-type, .full-width .third.first{padding-left:0;}
+
 
 .box div{background:rgba(255,255,255,.65);text-align:center;padding:10px;min-height:320px}
 .box h2{
@@ -453,3 +455,100 @@ a.cta{
     max-width:400px;
     background: rgba(80, 9, 77, 0.65);
 }
+body.active #menu-main-nav{
+    width:50%!important;
+    z-index:1;
+}
+body.active > .body-wrapper{
+    margin-left:-50%;
+}
+body > .body-wrapper{transition:margin-left .5s ease-in-out;width:100%;position: relative;}
+.parralax{backface-visibility: hidden;}
+
+.navbar.fixed{margin-left:0;transition:margin-left .5s ease-in-out;}
+body.active .navbar.fixed{margin-left:1%;}
+
+
+.section-title{
+    margin:0 0 0 7%;
+    font-weight:600;
+    text-transform:uppercase;
+    color:#000;
+    font-size: 59px;
+    font-size:3.7rem;
+}
+
+section .section-title {
+margin-top: -30px;
+position: relative;
+padding: 0 0 30px 0;
+}
+
+.blog-offset .row {
+max-width: 85%;
+padding:0;
+}
+
+.blog-offset .row .columns{margin-bottom:20px!important}
+
+
+#clients{padding:40px 0}
+
+@media only screen and (max-width: 767px){
+.forcefullwidth_wrapper_tp_banner{display:none}
+    
+}
+
+.footer-nav ul{float:right}
+.footer-nav ul li {
+float: left;
+margin: 0 15px;
+font-size:.8rem;
+}
+.blog-roll{padding-top:105px}
+.mt20{margin-top:20px}
+
+.category a {
+background:rgba(90, 8, 105, 1);
+padding: 0 20px;
+border-radius: 20px;
+color: #FFF;
+}
+
+.tags a{
+    background:gray;
+    padding:0 10px;
+    border-radius:10px;
+    color:#fff;
+    font-size:.8rem;
+}
+
+.member-info h3{
+    font-weight:800;
+}
+.member-info .title{display:block;font-size:.5em;color:#60045c}
+
+
+@include respond(all-phones) {
+  .full-width .third{width:100%}
+.full-width .box{float:none;}
+.full-width .third:last-of-type, .full-width .third.last{float:none;padding-right:20px}
+.full-width .third:first-of-type, .full-width .third.first{padding-left:20px;}  
+    .box h2{font-size:1.3em;}
+    .box div p{font-size:1em;}
+   .box div {min-height:0;}
+    
+    #intro {padding: 0px 20px;}
+    #intro blockquote{font-size:2.1em;padding:100px 7.5% 20px 7.5%}
+    
+    .cta-section h3{font-size:2em;margin:0;}
+.section-title{font-size:1.7rem}
+    
+    #clients .row .two.columns{width:50%!important;float:left!important}
+    
+    .blog-offset .row {max-width: 100%;padding: 0 20px;}
+    
+    .members .tab-nav>li {width: 50%;margin: 0;}
+    
+}
+

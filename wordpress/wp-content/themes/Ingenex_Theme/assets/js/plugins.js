@@ -114,7 +114,9 @@ jQuery( document ).ready(function( $ ) {
 
 	// update bg position based on scroll and parallax ratio
 	Parallax.prototype.scroll = function() {
-		this.setPosition(this.startPos - (this.$holder.scrollTop() * this.ratio));
+        this.$startingpoint = this.startPos - (this.$holder.scrollTop() * this.ratio);
+                  if(this.$startingpoint <= this.ratio){this.$startingpoint = 0}        
+		this.setPosition(this.$startingpoint);
 	};
 
 	// set background y axis position with 50% x axis
